@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:video_app_flutter/page/GridListPage.dart';
 import 'package:video_app_flutter/page/ListPage.dart';
 import 'package:video_app_flutter/page/MyHomePage.dart';
+import 'package:video_app_flutter/page/SwiperPage.dart';
 import 'package:video_app_flutter/page/TabBarPage.dart';
 import 'package:video_app_flutter/page/TabBarPage2.dart';
 
@@ -40,8 +42,8 @@ class MainPageState extends State<MainPage> {
   }
 
    getPageList(){
-    var pageTitle = ["简单布局","底部导航","顶部导航","List列表"];
-    var page = [MyHomePage(title: "简单布局"),TabBarPage(),TabBarPage2(),ListPage(title: "List列表",)];
+    var pageTitle = ["简单布局","底部导航","顶部导航","List列表","轮播图","GridView"];
+    var page = [MyHomePage(title: "简单布局"),TabBarPage(),TabBarPage2(),ListPage(title: "List列表",),SwiperPage(),GridListPage()];
     List<Widget> pageLists = List();
     for(int i=0;i<page.length;i++){
       pageLists.add(
